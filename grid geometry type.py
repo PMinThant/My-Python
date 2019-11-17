@@ -1,0 +1,12 @@
+from tkinter import *
+win = Tk()
+win.geometry("400x400")
+win.title("Grid Example")
+frame = Frame(win)
+Label(frame,text="Username :").grid(column=0,row=0,sticky=W)
+Label(frame,text="Password :").grid(column=0,row=1,sticky=W)
+Entry(frame).grid(column=1,row=0,pady=10,sticky=E)
+Entry(frame).grid(column=1,row =1,pady = 10,sticky=E)
+Button(frame,text="Login").grid(column=1,row=2,sticky=NSEW)
+frame.grid()
+win.mainloop()
